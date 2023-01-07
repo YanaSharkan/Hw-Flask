@@ -20,15 +20,9 @@ def return_requirements():
 
 @app.route("/generate-users", methods=["GET"])
 def generate_users():
-    count = 0
-    try:
-        count = int(request.args.get("count"))
-    except TypeError:
-        abort(400)
-    if not count or count < 0:
-        abort(412)
+    count = request.args.get("count", 100)
     res = []
-    for _ in range(count):
+    for _ in range(int(count)):
         res.append({"email": fake.email(), "name": fake.first_name()})
     return res
 
