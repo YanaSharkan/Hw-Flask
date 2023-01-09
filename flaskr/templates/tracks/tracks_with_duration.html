@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Tracks with duration{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    {% for track in data %}
+        <h2>{{track['title']}} - {{track['length']}}</h2>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+
+{% endblock %}
