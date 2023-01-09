@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Number of records for genre {{ data['genre'] }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>Total of records for genre {{ data['genre'] }} is {{ data['count'] }}</h2>
+
+{% endblock %}

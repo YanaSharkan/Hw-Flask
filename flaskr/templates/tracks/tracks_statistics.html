@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Track statistics{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>Average track length {{ data['average'] }}</h2>
+<hr>
+<h2>Total track length {{ data['total'] }}</h2>
+
+{% endblock %}

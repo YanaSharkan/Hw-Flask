@@ -1,13 +1,15 @@
-## Work with Flask
+## Tracks catalog application
 
-With using Flask framework, in this repository implements the following functions.
+Tracks catalog application that provides statistic of track.
 
 ###### Implemented functions:
-* return_requirments
-  (Return the contents of a file with python packages).
-* generate_users
-  (Output 100 randomly generated users (mail + name)).
-* get_average_h_w
-  (Output average height and weight).
-* get_num_astronauts
-  (Output the number of astronauts at the moment)
+* get_names()
+  (Return the count of unique artist).
+* get_number_of_records()
+  (Output total number of records).
+* get_tracks_by_genre()
+  (Output tracks by selected genre).
+* get_tracks_with_duration()
+  (Output the tracks with duration).
+* get_tracks_statistics()
+  (Output average duration of track and total duration of all tracks).

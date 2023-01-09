@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Number of records{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>Total of records is {{ data['count'] }}</h2>
+
+{% endblock %}
